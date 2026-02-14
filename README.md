@@ -82,7 +82,8 @@ The trained models were deployed using Streamlit Community Cloud.
 https://ml-assignment-2-h54pbzslfyq2mwtchrqyka.streamlit.app/
 
 The web application allows:
-- Uploading a test dataset (CSV file)  
+- Uploading a test dataset (CSV file)
+- Checking the performance of each model with a test dataset and provides downloading option
 - Selecting a model from a dropdown  
 - Viewing evaluation metrics  
 - Displaying the confusion matrix  
