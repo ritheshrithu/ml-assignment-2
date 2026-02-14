@@ -48,6 +48,8 @@ if uploaded_file:
     X = data.drop("income", axis=1)
     y = data["income"]
 
+    X = pd.DataFrame(scaler.transform(X), columns=X.columns)
+
     model = models[model_choice]
     y_pred = model.predict(X)
 
