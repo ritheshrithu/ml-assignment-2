@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-st.title("Income Classification - ML Assignment 2")
+st.title("2025AA05655 - Income Classification - ML Assignment 2")
 
 label_encoders = joblib.load("model/label_encoders.pkl")
 log_model = joblib.load("model/log_model.pkl")

@@ -2,27 +2,27 @@
 
 ## a) Problem Statement
 
-The objective of this project is to build and compare multiple machine learning classification models to predict whether an individual earns more than \$50K per year based on demographic and employment-related attributes. This is a binary classification problem where the target variable represents income category (<=50K or >50K).
+The goal of this project is to build and compare different machine learning classification models to predict whether a person earns more than $50K per year. This is a binary classification problem where the output is either <=50K or >50K.
 
-The project demonstrates an end-to-end machine learning workflow including:
-- Data preprocessing
-- Model training
-- Model evaluation
-- Performance comparison
-- Deployment using Streamlit
+This project covers the complete machine learning workflow including:
+- Data preprocessing  
+- Training multiple models  
+- Evaluating model performance  
+- Comparing results  
+- Deploying the final solution using Streamlit  
 
 ---
 
 ## b) Dataset Description
 
-The Adult Income dataset is obtained from the UCI Machine Learning Repository. It contains demographic and employment-related attributes such as age, workclass, education, occupation, marital status, hours-per-week, and others.
+The Adult Income dataset is taken from the UCI Machine Learning Repository. It contains demographic and work-related information such as age, education, occupation, marital status, workclass, hours-per-week, and more.
 
-- **Number of Instances:** ~48,000+
-- **Number of Features:** 14
-- **Target Variable:** Income (<=50K or >50K)
-- **Problem Type:** Binary Classification
+- **Number of Instances:** ~48,000  
+- **Number of Features:** 14  
+- **Target Variable:** Income (<=50K or >50K)  
+- **Problem Type:** Binary Classification  
 
-The dataset satisfies the assignment requirements of having more than 12 features and more than 500 instances.
+The dataset meets the assignment requirement of having more than 12 features and more than 500 records.
 
 ---
 
@@ -35,16 +35,16 @@ The following six classification models were implemented on the same dataset:
 3. K-Nearest Neighbors (kNN)  
 4. Naive Bayes (Gaussian)  
 5. Random Forest (Ensemble)  
-6. XGBoost (Ensemble)
+6. XGBoost (Ensemble)  
 
-Each model was evaluated using the following metrics:
+Each model was evaluated using these performance metrics:
 
 - Accuracy  
 - AUC Score  
 - Precision  
 - Recall  
 - F1 Score  
-- Matthews Correlation Coefficient (MCC)
+- Matthews Correlation Coefficient (MCC)  
 
 ---
 
@@ -63,14 +63,14 @@ Each model was evaluated using the following metrics:
 
 ## Model Performance Observations
 
-| ML Model Name | Observation about model performance |
-|---------------|--------------------------------------|
-| Logistic Regression | Logistic Regression achieved good overall accuracy but relatively low recall. This indicates that while it makes precise predictions for high-income individuals, it misses a significant portion of actual positive cases. Being a linear model, it may not capture complex relationships in the dataset. |
-| Decision Tree | The Decision Tree model shows moderate performance with balanced precision and recall. However, the lower AUC suggests possible overfitting compared to ensemble methods. |
-| kNN | The kNN model performs better than Logistic Regression in terms of F1 and MCC score, indicating that neighborhood-based classification captures nonlinear patterns in the data. |
-| Naive Bayes | Naive Bayes performs the weakest among all models, particularly in recall and F1 score. This suggests that the feature independence assumption does not hold well for this dataset. |
-| Random Forest (Ensemble) | Random Forest significantly improves performance over a single Decision Tree, demonstrating the strength of ensemble learning. It achieves higher AUC, F1, and MCC scores due to reduced variance and improved generalization. |
-| XGBoost (Ensemble) | XGBoost achieves the best overall performance across all evaluation metrics. The boosting mechanism effectively reduces bias and variance, allowing it to model complex feature interactions efficiently. It is the best-performing model for this dataset. |
+| ML Model Name | Observation |
+|---------------|------------|
+| Logistic Regression | Logistic Regression achieved good overall accuracy but lower recall. This means it predicts positive cases carefully but misses some actual high-income individuals. Since it is a linear model, it may not capture complex patterns in the data. |
+| Decision Tree | The Decision Tree model gave balanced precision and recall but lower AUC compared to ensemble models. Single trees can sometimes overfit and may not generalize well. |
+| kNN | The kNN model performed slightly better than Logistic Regression in terms of F1 and MCC score. This suggests that local similarity between data points helps in classification. |
+| Naive Bayes | Naive Bayes showed the weakest performance, especially in recall. This indicates that the assumption of independent features does not hold strongly for this dataset. |
+| Random Forest (Ensemble) | Random Forest improved performance compared to a single Decision Tree. Ensemble learning helped reduce overfitting and improved overall accuracy and AUC. |
+| XGBoost (Ensemble) | XGBoost achieved the best performance across all metrics. The boosting technique helps in capturing complex relationships and improving prediction accuracy. It is the best-performing model in this project. |
 
 ---
 
@@ -78,16 +78,19 @@ Each model was evaluated using the following metrics:
 
 The trained models were deployed using Streamlit Community Cloud.
 
-The web application includes:
-- CSV test dataset upload
-- Model selection dropdown
-- Display of evaluation metrics
-- Confusion matrix visualization
+**Live App:**  
+https://ml-assignment-2-h54pbzslfyq2mwtchrqyka.streamlit.app/
+
+The web application allows:
+- Uploading a test dataset (CSV file)  
+- Selecting a model from a dropdown  
+- Viewing evaluation metrics  
+- Displaying the confusion matrix  
 
 ---
 
 ## Final Notes
 
-- All six models were implemented on the same dataset.
-- All required evaluation metrics were calculated.
-- The Streamlit app meets all assignment requirements.
+- All six models were implemented on the same dataset.  
+- All required evaluation metrics were calculated.  
+- The Streamlit application meets all assignment requirements.  
