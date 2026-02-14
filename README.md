@@ -48,7 +48,7 @@ Each model was evaluated using the following metrics:
 
 ---
 
-## 📊 Comparison Table
+## Comparison Table
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---------------|----------|------|-----------|--------|------|------|
@@ -61,7 +61,7 @@ Each model was evaluated using the following metrics:
 
 ---
 
-## 📌 Model Performance Observations
+## Model Performance Observations
 
 | ML Model Name | Observation about model performance |
 |---------------|--------------------------------------|
@@ -74,7 +74,7 @@ Each model was evaluated using the following metrics:
 
 ---
 
-## 🚀 Streamlit Deployment
+## Streamlit Deployment
 
 The trained models were deployed using Streamlit Community Cloud.
 
@@ -86,7 +86,7 @@ The web application includes:
 
 ---
 
-## ✅ Final Notes
+## Final Notes
 
 - All six models were implemented on the same dataset.
 - All required evaluation metrics were calculated.
